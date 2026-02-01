@@ -48,11 +48,22 @@ body {
   }
 
   .btn-primary {
-    @apply px-6 py-3 bg-accent-green text-black font-semibold rounded-lg hover:bg-green-400 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply px-3 py-2 text-sm bg-accent-green text-black font-semibold rounded-lg hover:bg-green-400 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
   }
 
   .btn-secondary {
-    @apply px-6 py-3 bg-zinc-700 text-white font-medium rounded-lg hover:bg-zinc-600 transition-all duration-200;
+    @apply px-3 py-2 text-sm bg-zinc-700 text-white font-medium rounded-lg hover:bg-zinc-600 transition-all duration-200;
+  }
+
+  /* Larger buttons on desktop */
+  @media (min-width: 1024px) {
+    .btn-primary {
+      @apply px-6 py-3 text-base;
+    }
+
+    .btn-secondary {
+      @apply px-6 py-3 text-base;
+    }
   }
 
   .payment-card {
